@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import Profile from '../../assets/profile.jpg';
 
 export const About = () => {
+
+  const navigate = useNavigate();
+
+
   return (
     <section
       id="about"
-      className="w-full min-h-screen flex flex-col justify-center items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
+      className="w-full min-h-screen flex flex-col justify-start pt-14 items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
     >
       <motion.div
         className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"
@@ -28,7 +33,13 @@ export const About = () => {
           <p className="text-lg leading-relaxed mb-4">
             Sou <strong>Pedro Guilherme Guimarães Abadia</strong>, profissional de Tecnologia da Informação com experiência em gestão de projetos, suporte técnico e desenvolvimento de sistemas.
           </p>
-          {/* (outros parágrafos...) */}
+
+          <button
+            onClick={() => navigate('/resume')}
+            className="mt-6 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+          >
+            Ver Currículo
+          </button>
 
           {/* Ícones de Contato */}
           <div className="flex justify-center gap-6 mt-8">
