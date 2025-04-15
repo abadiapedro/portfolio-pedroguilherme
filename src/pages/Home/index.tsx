@@ -1,6 +1,5 @@
 import About from "../../components/About";
 import Education from "../../components/Education";
-import Experiences from "../../components/Experience";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Projects from "../../components/Projects";

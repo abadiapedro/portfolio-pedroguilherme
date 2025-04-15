@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Navbar from '../../components/Navbar';
 import Profile from '../../assets/profile.jpg';
 import { FaLinkedin, FaGithub, FaGitlab, FaEnvelope, FaWhatsapp, FaDownload } from 'react-icons/fa';
