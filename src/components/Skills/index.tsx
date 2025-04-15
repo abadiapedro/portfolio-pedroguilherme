@@ -24,14 +24,14 @@ export const Skills = () => {
   return (
     <section 
       id="skills" 
-      className="w-full flex flex-col justify-start pt-4 items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
+      className="w-full flex flex-col justify-start mt-8 mb-8 items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"
+        className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-4 flex flex-col items-center transition-colors"
       >
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">{t("skills.title")}</h2>

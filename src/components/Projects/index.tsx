@@ -35,7 +35,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full flex flex-col items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
+      className="w-full flex flex-col items-center mt-10 mb-10 px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}

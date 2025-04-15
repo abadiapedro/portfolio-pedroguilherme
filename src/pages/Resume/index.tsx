@@ -5,6 +5,7 @@ import { BsFillBriefcaseFill, BsFillPersonFill, BsFillBookFill, BsGlobe2 } from 
 import Footer from "../../components/Footer";
 import ScrollTop from '../../components/ScrollTop';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 type Experience = {
   company: string;
@@ -50,7 +51,14 @@ export const Resume = () => {
             <FaArrowLeft className="mr-2" /> {t("resume.backHome")}
           </a>
         </div>
-        <div className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors">
+        <motion.div
+  className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: true }}
+>
+
           <div className="flex flex-col items-center mb-12">
             <img src={Profile} alt="Pedro Guilherme" className="w-32 h-32 rounded-full border-4 border-white mb-4 object-cover" />
             <h1 className="text-3xl font-bold mb-1">Pedro Guilherme Guimarães Abadia</h1>
@@ -157,7 +165,7 @@ export const Resume = () => {
               {t("resume.download")}
             </a>
           </div>
-        </div>
+        </motion.div>
       </section>
       <Footer />
       <ScrollTop />
