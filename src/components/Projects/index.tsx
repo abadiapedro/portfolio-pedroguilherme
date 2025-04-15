@@ -46,16 +46,16 @@ export const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="max-w-6xl w-full bg-gray-300 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"
+        className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"
       >
-        <div 
-        className="max-w-6xl w-full bg-gray-300 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors">
+        {/* <div 
+        className="max-w-6xl w-full bg-gray-200 dark:bg-gray-700 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"> */}
 
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Projetos em Destaque</h2>
-            <p className="text-gray-400">
+            {/* <p className="text-gray-600 dark:text-gray-300">
               Veja alguns dos principais projetos que desenvolvi utilizando tecnologias modernas e boas práticas de desenvolvimento.
-            </p>
+            </p> */}
           </div>
 
           <Swiper
@@ -63,11 +63,11 @@ export const Projects = () => {
             pagination={{ clickable: true }}
             effect="fade"
             loop={true}
-            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             spaceBetween={10}
             navigation={true}
             slidesPerView={1}
-            className="w-full"
+            className="w-full rounded-lg"
           >
             {projects.map((project, index) => (
               <SwiperSlide key={index}>
@@ -97,7 +97,7 @@ export const Projects = () => {
           >
             Ver mais projetos
           </button>
-        </div>
+        {/* </div> */}
       </motion.div>
     </section>
   );

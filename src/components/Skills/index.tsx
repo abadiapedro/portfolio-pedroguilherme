@@ -19,26 +19,27 @@ export const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="w-full flex flex-col justify-center items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors">
+    <section 
+    id="skills" 
+     className="w-full flex flex-col justify-start pt-4 items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
+    >
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="max-w-6xl w-full bg-gray-300 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"
+      className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"
     >
 
-      <div className="max-w-6xl w-full bg-gray-300 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors">
+      {/* <div className="max-w-6xl w-full bg-gray-200 dark:bg-gray-700 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"> */}
         
-        {/* Título */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Habilidades Técnicas</h2>
-          <p className="text-gray-600 dark:text-gray-300">
+          <p className="text-gray-700 dark:text-gray-200">
             Algumas das principais tecnologias e ferramentas que domino.
           </p>
         </div>
 
-        {/* Lista de Skills */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
           {skills.map((skill, index) => (
             <div
@@ -53,7 +54,7 @@ export const Skills = () => {
           ))}
         </div>
 
-      </div>
+      {/* </div> */}
       </motion.div>
     </section>
   );
