@@ -1,15 +1,23 @@
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "../ThemeToggle";
+import { useTranslation } from "react-i18next";
+import { LanguageToggle } from "../LanguageToggle";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("about");
   const [isHome, setIsHome] = useState<boolean>(true);
+  const { t, i18n } = useTranslation();
 
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
+
+  // Agora com apenas a chave de tradução
   const menuItems = [
-    { label: "Sobre Mim", id: "about" },
-    { label: "Projetos", id: "projects" },
-    { label: "Habilidades", id: "skills" },
+    { key: "about", id: "about" },
+    { key: "projects", id: "projects" },
+    { key: "skills", id: "skills" },
   ];
 
   useEffect(() => {
@@ -59,26 +67,35 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-6">
-          {isHome && menuItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleScroll(item.id)}
-              className={`transition-colors font-semibold ${
-                activeSection === item.id
+          {isHome &&
+            menuItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => handleScroll(item.id)}
+                className={`transition-colors font-semibold ${activeSection === item.id
                   ? "text-blue-500 dark:text-blue-400"
                   : "text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-              }`}
-            >
-              {item.label}
-            </button>
-          ))}
-          <ThemeToggle />
+                  }`}
+              >
+                {t(`navbar.${item.key}`)}
+              </button>
+            ))}
+          <div className="flex items-center gap-3">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
         </div>
 
         <div className="md:hidden flex items-center gap-4">
-          <ThemeToggle />
+          <div className="flex items-center gap-3">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
           {isHome && (
-            <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="focus:outline-none"
+            >
               <svg
                 className="w-6 h-6 text-gray-800 dark:text-white"
                 fill="none"
@@ -114,13 +131,12 @@ export const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => handleScroll(item.id)}
-                className={`py-2 font-semibold transition-colors ${
-                  activeSection === item.id
-                    ? "text-blue-500 dark:text-blue-400"
-                    : "text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                }`}
+                className={`py-2 font-semibold transition-colors ${activeSection === item.id
+                  ? "text-blue-500 dark:text-blue-400"
+                  : "text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  }`}
               >
-                {item.label}
+                {t(`navbar.${item.key}`)}
               </button>
             ))}
           </div>

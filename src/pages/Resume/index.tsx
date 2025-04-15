@@ -4,110 +4,55 @@ import { FaLinkedin, FaGithub, FaGitlab, FaEnvelope, FaWhatsapp, FaDownload, FaA
 import { BsFillBriefcaseFill, BsFillPersonFill, BsFillBookFill, BsGlobe2 } from 'react-icons/bs';
 import Footer from "../../components/Footer";
 import ScrollTop from '../../components/ScrollTop';
+import { useTranslation } from 'react-i18next';
+
+type Experience = {
+  company: string;
+  roles: {
+    title: string;
+    period: string;
+    description: string;
+  }[];
+};
+
 
 export const Resume = () => {
+  const { t } = useTranslation();
+
+  const educationList = t("resume.education.list", { returnObjects: true }) as string[];
+
   const techSkills = [
-    { name: 'NodeJS', level: '85%' },
-    { name: 'ReactJS', level: '90%' },
-    { name: 'PHP', level: '75%' },
-    { name: 'Laravel', level: '75%' },
-    { name: 'PostgreSQL', level: '80%' },
-    { name: 'Docker', level: '70%' },
+    { name: 'nodejs', level: '85%' },
+    { name: 'reactjs', level: '90%' },
+    { name: 'php', level: '75%' },
+    { name: 'laravel', level: '75%' },
+    { name: 'postgresql', level: '80%' },
+    { name: 'docker', level: '70%' },
   ];
 
-  const softSkills = ['Liderança', 'Comunicação', 'Gestão de Projetos', 'Trabalho em Equipe'];
+  const softSkills = ['lideranca', 'comunicacao', 'gestao', 'trabalho'];
 
-  const experiences = [
-    {
-      company: "UniEVANGÉLICA - Universidade Evangélica de Goiás",
-      roles: [
-        {
-          title: "Analista de Sistemas Nível II",
-          period: "Março 2025 - Atual",
-          description: "Desenvolvimento e manutenção de sistemas web utilizando PHP, Laravel, JavaScript, NodeJS e ReactJS. Atuação em plataformas CMS, sistemas de agendamento e controle acadêmico, além de criação de hotsites institucionais.",
-        },
-        {
-          title: "Analista de Sistemas Nível I",
-          period: "Setembro 2023 - Março 2025",
-          description: "Desenvolvimento de sistemas internos e apoio no levantamento de requisitos e modelagem de processos, utilizando tecnologias como ReactJS, NodeJS, Strapi, Prisma e SQL Server.",
-        },
-      ],
-    },
-    {
-      company: "Pedro Guilherme Guimarães Abadia Consultoria em TI",
-      roles: [
-        {
-          title: "Gerente de Projetos de TI",
-          period: "Abril 2023 - Agosto 2023",
-          description: "Gestão de projetos de TI com metodologias ágeis e ferramentas como Jira, Confluence e Hubstaff. Coordenação de equipes de desenvolvimento de software.",
-        },
-      ],
-    },
-    {
-      company: "Unika Sistemas",
-      roles: [
-        {
-          title: "Analista de Suporte Júnior",
-          period: "Janeiro 2023 - Abril 2023",
-          description: "Suporte técnico a sistemas ERP e PDV, instalação e configuração de sistemas Android e Desktop. Atuação também como analista de testes (QA) em aplicações Java e Android.",
-        },
-        {
-          title: "Estagiário de Suporte de TI",
-          period: "Maio 2022 - Dezembro 2022",
-          description: "Atendimento ao cliente e suporte técnico a sistemas de gestão. Implantação de metodologia ágil (Scrum) e documentação de fluxos de atividades.",
-        },
-      ],
-    },
-    {
-      company: "Salutar Informática (Certifica Anápolis)",
-      roles: [
-        {
-          title: "Agente de Registro",
-          period: "Setembro 2019 - Janeiro 2020",
-          description: "Atuação no processo de emissão de certificados digitais e validação de documentos junto a clientes.",
-        },
-      ],
-    },
-    {
-      company: "Prefeitura Municipal de Goianésia",
-      roles: [
-        {
-          title: "Estagiário de TI",
-          period: "Janeiro 2019 - Julho 2019",
-          description: "Manutenção de computadores e impressoras, suporte aos usuários e acompanhamento de atividades do SysAdmin.",
-        },
-        {
-          title: "Estagiário de Eletrotécnica",
-          period: "Março 2017 - Dezembro 2018",
-          description: "Elaboração de projetos elétricos, planilhas orçamentárias e acompanhamento de obras de infraestrutura.",
-        },
-      ],
-    },
-  ];
+  const experiences = t("resume.experience.list", { returnObjects: true }) as Experience[];
+
 
   return (
     <>
       <Navbar />
       <section
         id="resume"
-        className="w-full min-h-screen flex flex-col justify-start pt-24 items-center px-4 md:px-8 py-8 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
+        className="w-full min-h-screen flex flex-col justify-start pt-20 items-center px-4 md:px-8 py-8 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
       >
         <div className="w-full max-w-6xl mb-6">
           <a
             href="/"
             className="flex items-center text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
           >
-            <FaArrowLeft className="mr-2" /> Voltar para Home
+            <FaArrowLeft className="mr-2" /> {t("resume.backHome")}
           </a>
         </div>
         <div className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors">
-
           <div className="flex flex-col items-center mb-12">
-            <img
-              src={Profile}
-              alt="Pedro Guilherme"
-              className="w-32 h-32 rounded-full border-4 border-white mb-4 object-cover"
-            />
+            <img src={Profile} alt="Pedro Guilherme" className="w-32 h-32 rounded-full border-4 border-white mb-4 object-cover" />
             <h1 className="text-3xl font-bold mb-1">Pedro Guilherme Guimarães Abadia</h1>
             <p className="text-lg text-gray-600 dark:text-gray-400">Analista de Sistemas | Gestor de Projetos | Desenvolvedor</p>
             <div className="flex gap-6 mt-4 text-2xl text-blue-600 dark:text-blue-400">
@@ -119,19 +64,19 @@ export const Resume = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">    
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-12">
               <div>
                 <h2 className="flex items-center text-xl font-bold mb-4 gap-2">
-                  <BsFillPersonFill /> Sobre Mim
+                  <BsFillPersonFill /> {t("resume.about.title")}
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Sou profissional de Tecnologia da Informação com experiência em gestão de projetos, desenvolvimento de sistemas e suporte técnico. Tenho formação em Sistemas de Informação e curso técnico em Eletrotécnica. Durante minha trajetória, atuei como agente de registro, analista de suporte, gerente de projetos de TI e desenvolvedor web. Tenho habilidades em certificação digital, suporte a sistemas ERP/PDV, levantamento de requisitos, modelagem de processos e liderança de equipes.
+                  {t("resume.about.description")}
                 </p>
               </div>
               <div>
                 <h2 className="flex items-center text-xl font-bold mb-4 gap-2">
-                  <BsFillBriefcaseFill /> Experiência Profissional
+                  <BsFillBriefcaseFill /> {t("resume.experience.title")}
                 </h2>
                 <div className="space-y-10">
                   {experiences.map((exp, index) => (
@@ -155,12 +100,12 @@ export const Resume = () => {
             </div>
             <div className="space-y-12 border-l border-gray-400 dark:border-gray-600 pl-6">
               <div>
-                <h2 className="text-xl font-bold mb-4">Tech Stack</h2>
+                <h2 className="text-xl font-bold mb-4">{t("resume.tech.title")}</h2>
                 <div className="space-y-2">
                   {techSkills.map(skill => (
                     <div key={skill.name}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium">{skill.name}</span>
+                        <span className="text-sm font-medium">{t(`resume.tech.list.${skill.name.toLowerCase()}`)}</span>
                       </div>
                       <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-2.5">
                         <div className="bg-blue-600 dark:bg-blue-400 h-2.5 rounded-full" style={{ width: skill.level }} />
@@ -170,43 +115,46 @@ export const Resume = () => {
                 </div>
               </div>
               <div>
-                <h2 className="text-xl font-bold mb-4">Soft Skills</h2>
+                <h2 className="text-xl font-bold mb-4">{t("resume.soft.title")}</h2>
                 <div className="flex flex-wrap gap-2">
                   {softSkills.map(skill => (
                     <span key={skill} className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded text-sm text-gray-700 dark:text-gray-300">
-                      {skill}
+                      {t(`resume.soft.list.${skill}`)}
                     </span>
                   ))}
                 </div>
               </div>
               <div>
                 <h2 className="flex items-center text-xl font-bold mb-4 gap-2">
-                  <BsFillBookFill /> Educação
+                  <BsFillBookFill /> {t("resume.education.title")}
                 </h2>
                 <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
-                  <li>MBA Gestão de Projetos - IPOG (2023 - 2024)</li>
-                  <li>Bacharelado Sistemas de Informação - UEG (2017 - 2023)</li>
-                  <li>Técnico em Eletrotécnica - SESI/SENAI (2014 - 2016)</li>
+                {educationList.map((item, index) => (
+  <li key={index}>{item}</li>
+))}
+
                 </ul>
               </div>
               <div>
                 <h2 className="flex items-center text-xl font-bold mb-4 gap-2">
-                  <BsGlobe2 /> Idiomas
+                  <BsGlobe2 /> {t("resume.languages.title")}
                 </h2>
                 <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-1">
-                  <li>Português - Nativo</li>
-                  <li>Inglês - B1</li>
+                  <li>{t("resume.languages.list.portuguese")}</li>
+                  <li>{t("resume.languages.list.english")}</li>
                 </ul>
               </div>
             </div>
           </div>
+
           <div className="flex justify-center mt-12">
             <a
               href="/PedroGuilherme.pdf"
               download
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-blue-400 dark:hover:bg-blue-500 text-white font-bold rounded-lg transition-colors"
-            ><FaDownload className="inline mb-1 mr-2" />
-              Baixar Currículo (PDF)
+            >
+              <FaDownload className="inline mb-1 mr-2" />
+              {t("resume.download")}
             </a>
           </div>
         </div>

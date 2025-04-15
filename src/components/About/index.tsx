@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Profile from '../../assets/profile.jpg';
 
 export const About = () => {
-
+  const { t } = useTranslation();
   const navigate = useNavigate();
-
 
   return (
     <section
@@ -29,16 +29,14 @@ export const About = () => {
 
         {/* Título e Texto */}
         <div className="text-center">
-          <h2 className="text-4xl font-bold mb-4">Sobre Mim</h2>
-          <p className="text-lg leading-relaxed mb-4">
-            Sou <strong>Pedro Guilherme Guimarães Abadia</strong>, profissional de Tecnologia da Informação com experiência em gestão de projetos, suporte técnico e desenvolvimento de sistemas.
-          </p>
+          <h2 className="text-4xl font-bold mb-4">{t("about.title")}</h2>
+          <p className="text-lg leading-relaxed mb-4">{t("about.description")}</p>
 
           <button
-            onClick={() => navigate('/resume')}
+            onClick={() => navigate('/sobre')}
             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
-            Ver Currículo
+            {t("about.button")}
           </button>
 
           {/* Ícones de Contato */}

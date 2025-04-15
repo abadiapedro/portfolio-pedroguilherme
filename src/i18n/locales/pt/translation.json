@@ -1,0 +1,163 @@
+{
+    "navbar": {
+        "about": "Sobre Mim",
+        "projects": "Projetos",
+        "skills": "Habilidades"
+    },
+    "about": {
+        "title": "Sobre Mim",
+        "description": "Sou Pedro Guilherme Guimarães Abadia, profissional de Tecnologia da Informação com experiência em gestão de projetos, suporte técnico e desenvolvimento de sistemas.",
+        "button": "Ver Currículo"
+    },
+    "projects": {
+        "title": "Projetos em Destaque",
+        "hotsite": {
+            "title": "Plataforma de Hotsites",
+            "description": "Gerenciamento de hotsites utilizando ReactJS, NodeJS e Strapi CMS."
+        },
+        "agenda": {
+            "title": "Sistema de Agendamento de Laboratórios",
+            "description": "Sistema para agendamento de equipamentos laboratoriais com ReactJS e SQL Server."
+        },
+        "internato": {
+            "title": "Sistema de Controle do Internato de Medicina",
+            "description": "Gestão de frequência e atividades para alunos de medicina, usando ReactJS e NodeJS."
+        },
+        "button": "Ver projeto",
+        "more": "Ver mais projetos"
+    },
+    "skills": {
+        "title": "Habilidades Técnicas",
+        "description": "Algumas das principais tecnologias e ferramentas que domino.",
+        "list": {
+            "react": "ReactJS",
+            "node": "NodeJS",
+            "php": "PHP",
+            "laravel": "Laravel",
+            "typescript": "TypeScript",
+            "javascript": "JavaScript",
+            "postgresql": "PostgreSQL",
+            "docker": "Docker",
+            "database": "Banco de Dados",
+            "jira": "Jira",
+            "trello": "Trello",
+            "figma": "Figma"
+        }
+    },
+    "footer": {
+        "rights": "Todos os direitos reservados."
+    },
+    "resume": {
+        "backHome": "Voltar para Home",
+        "about": {
+            "title": "Sobre Mim",
+            "description": "Sou profissional de Tecnologia da Informação com experiência em gestão de projetos, desenvolvimento de sistemas e suporte técnico. Tenho formação em Sistemas de Informação e curso técnico em Eletrotécnica. Durante minha trajetória, atuei como agente de registro, analista de suporte, gerente de projetos de TI e desenvolvedor web. Tenho habilidades em certificação digital, suporte a sistemas ERP/PDV, levantamento de requisitos, modelagem de processos e liderança de equipes."
+        },
+        "experience": {
+            "title": "Experiência Profissional",
+            "list": [
+                {
+                    "company": "UniEVANGÉLICA - Universidade Evangélica de Goiás",
+                    "roles": [
+                        {
+                            "title": "Analista de Sistemas Nível II",
+                            "period": "Março 2025 - Atual",
+                            "description": "Desenvolvimento e manutenção de sistemas web utilizando PHP, Laravel, JavaScript, NodeJS e ReactJS. Atuação em plataformas CMS, sistemas de agendamento e controle acadêmico, além de criação de hotsites institucionais."
+                        },
+                        {
+                            "title": "Analista de Sistemas Nível I",
+                            "period": "Setembro 2023 - Março 2025",
+                            "description": "Desenvolvimento de sistemas internos e apoio no levantamento de requisitos e modelagem de processos, utilizando tecnologias como ReactJS, NodeJS, Strapi, Prisma e SQL Server."
+                        }
+                    ]
+                },
+                {
+                    "company": "Pedro Guilherme Guimarães Abadia Consultoria em TI",
+                    "roles": [
+                        {
+                            "title": "Gerente de Projetos de TI",
+                            "period": "Abril 2023 - Agosto 2023",
+                            "description": "Gestão de projetos de TI com metodologias ágeis e ferramentas como Jira, Confluence e Hubstaff. Coordenação de equipes de desenvolvimento de software."
+                        }
+                    ]
+                },
+                {
+                    "company": "Unika Sistemas",
+                    "roles": [
+                        {
+                            "title": "Analista de Suporte Júnior",
+                            "period": "Janeiro 2023 - Abril 2023",
+                            "description": "Suporte técnico a sistemas ERP e PDV, instalação e configuração de sistemas Android e Desktop. Atuação também como analista de testes (QA) em aplicações Java e Android."
+                        },
+                        {
+                            "title": "Estagiário de Suporte de TI",
+                            "period": "Maio 2022 - Dezembro 2022",
+                            "description": "Atendimento ao cliente e suporte técnico a sistemas de gestão. Implantação de metodologia ágil (Scrum) e documentação de fluxos de atividades."
+                        }
+                    ]
+                },
+                {
+                    "company": "Salutar Informática (Certifica Anápolis)",
+                    "roles": [
+                        {
+                            "title": "Agente de Registro",
+                            "period": "Setembro 2019 - Janeiro 2020",
+                            "description": "Atuação no processo de emissão de certificados digitais e validação de documentos junto a clientes."
+                        }
+                    ]
+                },
+                {
+                    "company": "Prefeitura Municipal de Goianésia",
+                    "roles": [
+                        {
+                            "title": "Estagiário de TI",
+                            "period": "Janeiro 2019 - Julho 2019",
+                            "description": "Manutenção de computadores e impressoras, suporte aos usuários e acompanhamento de atividades do SysAdmin."
+                        },
+                        {
+                            "title": "Estagiário de Eletrotécnica",
+                            "period": "Março 2017 - Dezembro 2018",
+                            "description": "Elaboração de projetos elétricos, planilhas orçamentárias e acompanhamento de obras de infraestrutura."
+                        }
+                    ]
+                }
+            ]
+        },
+        "tech": {
+            "title": "Tech Stack",
+            "list": {
+                "nodejs": "NodeJS",
+                "reactjs": "ReactJS",
+                "php": "PHP",
+                "laravel": "Laravel",
+                "postgresql": "PostgreSQL",
+                "docker": "Docker"
+            }
+        },
+        "soft": {
+            "title": "Soft Skills",
+            "list": {
+                "lideranca": "Liderança",
+                "comunicacao": "Comunicação",
+                "gestao": "Gestão de Projetos",
+                "trabalho": "Trabalho em Equipe"
+            }
+        },
+        "education": {
+            "title": "Educação",
+            "list": [
+                "MBA Gestão de Projetos - IPOG (2023 - 2024)",
+                "Bacharelado Sistemas de Informação - UEG (2017 - 2023)",
+                "Técnico em Eletrotécnica - SESI/SENAI (2014 - 2016)"
+            ]
+        },
+        "languages": {
+            "title": "Idiomas",
+            "list": {
+                "portuguese": "Português - Nativo",
+                "english": "Inglês - B1"
+            }
+        },
+        "download": "Baixar Currículo (PDF)"
+    }
+}

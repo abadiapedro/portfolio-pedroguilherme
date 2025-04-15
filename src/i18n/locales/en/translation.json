@@ -1,0 +1,163 @@
+{
+    "navbar": {
+        "about": "About Me",
+        "projects": "Projects",
+        "skills": "Skills"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "I'm Pedro Guilherme Guimarães Abadia, an Information Technology professional with experience in project management, technical support, and systems development.",
+        "button": "View Resume"
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "hotsite": {
+            "title": "Hotsite Platform",
+            "description": "Hotsite management using ReactJS, NodeJS, and Strapi CMS."
+        },
+        "agenda": {
+            "title": "Lab Scheduling System",
+            "description": "System for scheduling lab equipment using ReactJS and SQL Server."
+        },
+        "internato": {
+            "title": "Medical Internship Control System",
+            "description": "Attendance and task management for medical students using ReactJS and NodeJS."
+        },
+        "button": "View project",
+        "more": "View more projects"
+    },
+    "skills": {
+        "title": "Technical Skills",
+        "description": "Some of the main technologies and tools I master.",
+        "list": {
+            "react": "ReactJS",
+            "node": "NodeJS",
+            "php": "PHP",
+            "laravel": "Laravel",
+            "typescript": "TypeScript",
+            "javascript": "JavaScript",
+            "postgresql": "PostgreSQL",
+            "docker": "Docker",
+            "database": "Database",
+            "jira": "Jira",
+            "trello": "Trello",
+            "figma": "Figma"
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved."
+    },
+    "resume": {
+        "backHome": "Back to Home",
+        "about": {
+            "title": "About Me",
+            "description": "I am an Information Technology professional with experience in project management, systems development, and technical support. I hold a degree in Information Systems and a technical degree in Electrotechnics. Throughout my career, I have worked as a registration agent, support analyst, IT project manager, and web developer. I have skills in digital certification, ERP/POS systems support, requirements gathering, process modeling, and team leadership."
+        },
+        "experience": {
+            "title": "Professional Experience",
+            "list": [
+                {
+                    "company": "UniEVANGÉLICA - Evangelical University of Goiás",
+                    "roles": [
+                        {
+                            "title": "Systems Analyst Level II",
+                            "period": "March 2025 - Present",
+                            "description": "Development and maintenance of web systems using PHP, Laravel, JavaScript, NodeJS, and ReactJS. Worked with CMS platforms, scheduling systems, academic control, and creation of institutional hotsites."
+                        },
+                        {
+                            "title": "Systems Analyst Level I",
+                            "period": "September 2023 - March 2025",
+                            "description": "Development of internal systems and support in requirements gathering and process modeling, using technologies such as ReactJS, NodeJS, Strapi, Prisma, and SQL Server."
+                        }
+                    ]
+                },
+                {
+                    "company": "Pedro Guilherme Guimarães Abadia IT Consulting",
+                    "roles": [
+                        {
+                            "title": "IT Project Manager",
+                            "period": "April 2023 - August 2023",
+                            "description": "IT project management using agile methodologies and tools such as Jira, Confluence, and Hubstaff. Coordination of software development teams."
+                        }
+                    ]
+                },
+                {
+                    "company": "Unika Sistemas",
+                    "roles": [
+                        {
+                            "title": "Junior Support Analyst",
+                            "period": "January 2023 - April 2023",
+                            "description": "Technical support for ERP and POS systems, installation and configuration of Android and Desktop systems. Also acted as a QA analyst for Java and Android applications."
+                        },
+                        {
+                            "title": "IT Support Intern",
+                            "period": "May 2022 - December 2022",
+                            "description": "Customer service and technical support for management systems. Implementation of agile methodology (Scrum) and activity flow documentation."
+                        }
+                    ]
+                },
+                {
+                    "company": "Salutar Informática (Certifica Anápolis)",
+                    "roles": [
+                        {
+                            "title": "Registration Agent",
+                            "period": "September 2019 - January 2020",
+                            "description": "Responsible for issuing digital certificates and validating documents with clients."
+                        }
+                    ]
+                },
+                {
+                    "company": "City Hall of Goianésia",
+                    "roles": [
+                        {
+                            "title": "IT Intern",
+                            "period": "January 2019 - July 2019",
+                            "description": "Maintenance of computers and printers, user support, and assistance with SysAdmin tasks."
+                        },
+                        {
+                            "title": "Electrotechnics Intern",
+                            "period": "March 2017 - December 2018",
+                            "description": "Development of electrical projects, budget spreadsheets, and infrastructure work supervision."
+                        }
+                    ]
+                }
+            ]
+        },
+        "tech": {
+            "title": "Tech Stack",
+            "list": {
+                "nodejs": "NodeJS",
+                "reactjs": "ReactJS",
+                "php": "PHP",
+                "laravel": "Laravel",
+                "postgresql": "PostgreSQL",
+                "docker": "Docker"
+            }
+        },
+        "soft": {
+            "title": "Soft Skills",
+            "list": {
+                "lideranca": "Leadership",
+                "comunicacao": "Communication",
+                "gestao": "Project Management",
+                "trabalho": "Teamwork"
+            }
+        },
+        "education": {
+            "title": "Education",
+            "list": [
+                "MBA in Project Management - IPOG (2023 - 2024)",
+                "Bachelor's in Information Systems - UEG (2017 - 2023)",
+                "Technical Degree in Electrotechnics - SESI/SENAI (2014 - 2016)"
+            ]
+        },
+        "languages": {
+            "title": "Languages",
+            "list": {
+                "portuguese": "Portuguese - Native",
+                "english": "English - B1"
+            }
+        },
+        "download": "Download Resume (PDF)"
+    }
+}
