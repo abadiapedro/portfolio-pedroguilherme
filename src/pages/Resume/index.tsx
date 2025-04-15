@@ -102,7 +102,6 @@ export const Resume = () => {
         </div>
         <div className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors">
 
-          {/* Top Profile */}
           <div className="flex flex-col items-center mb-12">
             <img
               src={Profile}
@@ -120,11 +119,8 @@ export const Resume = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Left Side - About Me + Work Experience */}
+          <div className="grid md:grid-cols-3 gap-8">    
             <div className="md:col-span-2 space-y-12">
-
-              {/* About Me */}
               <div>
                 <h2 className="flex items-center text-xl font-bold mb-4 gap-2">
                   <BsFillPersonFill /> Sobre Mim
@@ -133,13 +129,10 @@ export const Resume = () => {
                   Sou profissional de Tecnologia da Informação com experiência em gestão de projetos, desenvolvimento de sistemas e suporte técnico. Tenho formação em Sistemas de Informação e curso técnico em Eletrotécnica. Durante minha trajetória, atuei como agente de registro, analista de suporte, gerente de projetos de TI e desenvolvedor web. Tenho habilidades em certificação digital, suporte a sistemas ERP/PDV, levantamento de requisitos, modelagem de processos e liderança de equipes.
                 </p>
               </div>
-
-              {/* Work Experience */}
               <div>
                 <h2 className="flex items-center text-xl font-bold mb-4 gap-2">
                   <BsFillBriefcaseFill /> Experiência Profissional
                 </h2>
-
                 <div className="space-y-10">
                   {experiences.map((exp, index) => (
                     <div key={index}>
@@ -158,15 +151,9 @@ export const Resume = () => {
                     </div>
                   ))}
                 </div>
-
               </div>
-
             </div>
-
-            {/* Right Side - Tech Stack, Soft Skills, Education, Languages */}
-            <div className="space-y-12">
-
-              {/* Tech Stack */}
+            <div className="space-y-12 border-l border-gray-400 dark:border-gray-600 pl-6">
               <div>
                 <h2 className="text-xl font-bold mb-4">Tech Stack</h2>
                 <div className="space-y-2">
@@ -182,8 +169,6 @@ export const Resume = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Soft Skills */}
               <div>
                 <h2 className="text-xl font-bold mb-4">Soft Skills</h2>
                 <div className="flex flex-wrap gap-2">
@@ -194,8 +179,6 @@ export const Resume = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Education */}
               <div>
                 <h2 className="flex items-center text-xl font-bold mb-4 gap-2">
                   <BsFillBookFill /> Educação
@@ -206,8 +189,6 @@ export const Resume = () => {
                   <li>Técnico em Eletrotécnica - SESI/SENAI (2014 - 2016)</li>
                 </ul>
               </div>
-
-              {/* Languages */}
               <div>
                 <h2 className="flex items-center text-xl font-bold mb-4 gap-2">
                   <BsGlobe2 /> Idiomas
@@ -217,7 +198,6 @@ export const Resume = () => {
                   <li>Inglês - B1</li>
                 </ul>
               </div>
-
             </div>
           </div>
           <div className="flex justify-center mt-12">
@@ -229,7 +209,6 @@ export const Resume = () => {
               Baixar Currículo (PDF)
             </a>
           </div>
-
         </div>
       </section>
       <Footer />
