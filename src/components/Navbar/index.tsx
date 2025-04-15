@@ -7,11 +7,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("about");
   const [isHome, setIsHome] = useState<boolean>(true);
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-  };
+  const { t } = useTranslation();
 
   // Agora com apenas a chave de tradução
   const menuItems = [
