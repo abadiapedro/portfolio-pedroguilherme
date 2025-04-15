@@ -1,5 +1,4 @@
 import About from "../../components/About";
-import Education from "../../components/Education";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Projects from "../../components/Projects";
@@ -14,8 +13,6 @@ export const Home = () => {
       <div className="pt-20">
         <About />
         <Projects />
-        {/* <Experiences /> */}
-        <Education />
         <Skills />
       </div>
       <Footer />

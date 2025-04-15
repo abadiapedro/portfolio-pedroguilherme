@@ -11,7 +11,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="w-full min-h-screen flex flex-col justify-start pt-14 items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
+      className="w-full flex flex-col justify-start pt-4 items-center px-4 md:px-8 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
     >
       <motion.div
         className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 flex flex-col items-center transition-colors"

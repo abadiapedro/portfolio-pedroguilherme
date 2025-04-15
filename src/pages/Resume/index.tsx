@@ -1,8 +1,9 @@
 import Navbar from '../../components/Navbar';
 import Profile from '../../assets/profile.jpg';
-import { FaLinkedin, FaGithub, FaGitlab, FaEnvelope, FaWhatsapp, FaDownload } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaGitlab, FaEnvelope, FaWhatsapp, FaDownload, FaArrowLeft } from 'react-icons/fa';
 import { BsFillBriefcaseFill, BsFillPersonFill, BsFillBookFill, BsGlobe2 } from 'react-icons/bs';
 import Footer from "../../components/Footer";
+import ScrollTop from '../../components/ScrollTop';
 
 export const Resume = () => {
   const techSkills = [
@@ -91,6 +92,14 @@ export const Resume = () => {
         id="resume"
         className="w-full min-h-screen flex flex-col justify-start pt-24 items-center px-4 md:px-8 py-8 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors"
       >
+        <div className="w-full max-w-6xl mb-6">
+          <a
+            href="/"
+            className="flex items-center text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+          >
+            <FaArrowLeft className="mr-2" /> Voltar para Home
+          </a>
+        </div>
         <div className="max-w-6xl w-full bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors">
 
           {/* Top Profile */}
@@ -224,6 +233,7 @@ export const Resume = () => {
         </div>
       </section>
       <Footer />
+      <ScrollTop />
     </>
   );
 };
