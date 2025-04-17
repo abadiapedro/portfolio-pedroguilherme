@@ -97,6 +97,16 @@
                     ]
                 },
                 {
+                    "company": "Universidade Estadual de Goiás - UEG",
+                    "roles": [
+                        {
+                            "title": "Estudante voluntário",
+                            "period": "ago de 2021 - jul de 2022",
+                            "description": "Atuei como acadêmico voluntário pelo Programa de Voluntários de Iniciação Científica (PVIC/UEG), no Projeto de Pesquisa: Classificação de padrões em frutos de cagaita utilizando imagens digitais, redes neurais artificiais e estatística multivariada. Organizei, padronizei e mantive a base de dados no SGBD PostgreSQL."
+                        }
+                    ]
+                },
+                {
                     "company": "Salutar Informática (Certifica Anápolis)",
                     "roles": [
                         {
@@ -159,5 +169,13 @@
             }
         },
         "download": "Baixar Currículo (PDF)"
+    },
+    "languageToggle": {
+        "portuguese": "Português",
+        "english": "Inglês"
+    },
+    "themeToggle": {
+        "light": "Claro",
+        "dark": "Escuro"
     }
 }

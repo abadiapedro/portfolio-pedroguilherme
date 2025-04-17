@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export function ThemeToggle() {
+  const { t } = useTranslation();
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -55,8 +57,8 @@ export function ThemeToggle() {
       ></div>
 
       <div className="absolute flex justify-between w-12 px-1 text-sm">
-        <span className="text-yellow-400">☀️</span>
-        <span className="text-blue-400">🌙</span>
+      <span className="text-yellow-400" title={t("themeToggle.light")}>☀️</span>
+        <span className="text-blue-400" title={t("themeToggle.dark")}>🌙</span>
       </div>
     </div>
   );

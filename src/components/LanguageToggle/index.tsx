@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export function LanguageToggle() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [lang, setLang] = useState("pt");
 
   useEffect(() => {
@@ -25,15 +25,14 @@ export function LanguageToggle() {
     >
       {/* Toggle */}
       <div
-        className={`w-6 h-6 bg-white dark:bg-gray-800 rounded-full shadow-md transform transition-transform ${
-          lang === "en" ? "translate-x-6" : ""
-        }`}
+        className={`w-6 h-6 bg-white dark:bg-gray-800 rounded-full shadow-md transform transition-transform ${lang === "en" ? "translate-x-6" : ""
+          }`}
       ></div>
 
-      {/* Bandeiras */}
-      <div className="absolute flex justify-between w-12 px-1 text-sm pointer-events-none">
-        <span className="text-[13px]">🇧🇷</span>
-        <span className="text-[13px]">🇺🇸</span>
+      {/* Bandeiras com tooltip */}
+      <div className="absolute flex justify-between w-12 px-1 text-sm ">
+        <span className="text-[13px]" title={t("languageToggle.portuguese")}>🇧🇷</span>
+        <span className="text-[13px]" title={t("languageToggle.english")}>🇺🇸</span>
       </div>
     </div>
   );

@@ -97,6 +97,16 @@
                     ]
                 },
                 {
+                    "company": "State University of Goiás - UEG",
+                    "roles": [
+                        {
+                            "title": "Volunteer Student",
+                            "period": "Aug 2021 - Jul 2022",
+                            "description": "I served as a volunteer scholar through the PVIC/UEG Undergraduate Research Volunteers Program on the research project “Classification of patterns in cagaita fruits using digital images, artificial neural networks, and multivariate statistics.” My main activities included organizing, standardizing, and maintaining the database using PostgreSQL."
+                        }
+                    ]
+                },
+                {
                     "company": "Salutar Informática (Certifica Anápolis)",
                     "roles": [
                         {
@@ -159,5 +169,13 @@
             }
         },
         "download": "Download Resume (PDF)"
+    },
+    "languageToggle": {
+        "portuguese": "Portuguese",
+        "english": "English"
+    },
+    "themeToggle": {
+        "light": "Light",
+        "dark": "Dark"
     }
 }
